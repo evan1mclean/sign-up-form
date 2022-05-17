@@ -20,31 +20,39 @@
             <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
             <p>You <em>know</em> you want to.</p>
         </div>
-        <form action="" method="post" class="signup-form">
+        <form id="signup-form">
+            <h1>Let's do this!</h1>
             <div class="input-section">
-                <h1>Let's do this!</h1>
                 <div class="form-row">
                     <label for="firstname">First name</label>
-                    <input type="text" name="first-name" id="firstname">
+                    <input type="text" name="first-name" id="firstname" required>
+                </div>
+                <div class="form-row">
                     <label for="lastname">Last name</label>
-                    <input type="text" name="last-name" id="lastname">
+                    <input type="text" name="last-name" id="lastname" required>
                 </div>
                 <div class="form-row">
                     <label for="useremail">Email</label>
-                    <input type="email" name="user-email" id="useremail">
+                    <input type="email" name="user-email" id="useremail" required>
+                </div>
+                <div class="form-row">
                     <label for="userphone">Phone number</label>
-                    <input type="tel" name="user-phone" id="userphone" pattern=".?(\\d{3}).*(\\d{3}).*(\\d{4})">
+                    <input type="tel" name="user-phone" id="userphone" pattern=".?(\d{3}).*(\d{3}).*(\d{4})" required>
                 </div>
                 <div class="form-row">
                     <label for="userpassword">Password</label>
-                    <input type="password" name="user-password" id="userpassword">
+                    <input type="password" name="user-password" id="userpassword" required>
+                    <div class="error"></div>
+                </div>
+                <div class="form-row">
                     <label for="confirmpassword">Confirm Password</label>
-                    <input type="password" name="confirm-password" id="confirmpassword">
+                    <input type="password" name="confirm-password" id="confirmpassword" required>
+                    <div class="error"></div>
                 </div>
             </div>
-            <button type="submit">Create Account</button>
-            <p>Already have an account? <a href="index.html">Log in</a></p>
         </form>
+        <button type="submit" form="signup-form">Create Account</button>
+        <p>Already have an account? <a href="index.html">Log in</a></p>
     </div>
     
 </body>
