@@ -1,7 +1,7 @@
 * {
-    /* border: 1px solid red; */
     box-sizing: border-box;
 }
+
 :root {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
@@ -149,7 +149,7 @@ button {
 }
 
 button + p {
-    margin-left: 40px;
+    margin: 0 0 40px 40px;
 }
 
 button + p a {
@@ -159,6 +159,37 @@ button + p a {
 
 
 
-/* @media screen and (max-width: 850px) {
+@media screen and (max-width: 750px) {
+    body {
+        flex-direction: column;
+        height: auto;
+    }
 
-} */
+    .sidebar {
+        height: 400px;
+    }
+
+    .logo {
+        bottom: 50%;
+    }
+
+    .intro {
+        padding: 40px;
+    }
+
+    .intro p {
+        width: 100%;
+    }
+
+    .form-row {
+        width: 100%;
+    }
+
+    .input-section {
+        width: 100%;
+    }
+
+    #signup-form {
+        padding: 40px;
+    }
+}
