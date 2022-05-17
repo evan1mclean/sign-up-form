@@ -192,4 +192,12 @@ button + p a {
     #signup-form {
         padding: 40px;
     }
+
+    button {
+        margin: 30px auto;
+    }
+
+    button + p {
+        margin: 0 auto 30px auto;
+    }
 }
